@@ -18,3 +18,13 @@ details {
 details[open] {
   width: 300px;
 }
+
+summary {
+  display: block;
+  float: left;
+}
+
+details > div {
+  margin-left: 130px;
+  width: 170px;
+}
