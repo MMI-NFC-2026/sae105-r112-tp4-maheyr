@@ -1,3 +1,11 @@
 .accordeon {
   display: flex;
 }
+summary {
+  cursor: pointer;
+}
+
+summary img {
+  display: block;
+  width: 100px;
+}
