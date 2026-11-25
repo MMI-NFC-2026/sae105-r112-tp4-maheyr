@@ -1,34 +1,33 @@
+/* Les details sont empilés les uns sous les autres */
 .accordeon {
   display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
-summary {
+
+/* details (fermé et ouvert) : boîte grise aux coins arrondis */
+details {
+  width: 160px;
+  padding: 6px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* Le summary : l'image à gauche, le triangle à droite */
+.accordeon > details > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 }
 
+/* L'image du summary : 100px de large */
 summary img {
   display: block;
   width: 100px;
 }
 
-details {
-  width: 150px;
-  transition: width 0.5s;
-}
-
-details[open] {
-  width: 300px;
-}
-
-summary {
-  display: block;
-  float: left;
-}
-
-details > div {
-  margin-left: 130px;
-  width: 170px;
-}
-
+/* Supprimer le triangle d'origine */
 .accordeon > details > summary {
   list-style: none;
 }
