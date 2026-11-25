@@ -9,3 +9,12 @@ summary img {
   display: block;
   width: 100px;
 }
+
+details {
+  width: 150px;
+  transition: width 0.5s;
+}
+
+details[open] {
+  width: 300px;
+}
