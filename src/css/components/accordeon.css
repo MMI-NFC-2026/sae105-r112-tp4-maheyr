@@ -39,3 +39,8 @@ summary img {
   margin-right: 14px;
   transition: 0.5s;
 }
+
+.accordeon > details[open] > summary::after {
+  transform: rotate(90deg);
+  border-left-color: pink;
+}
